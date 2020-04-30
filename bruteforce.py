@@ -1,9 +1,9 @@
-chiave = 100000
+chiave = 999877
 
 print("Contenuto bloccato.")
-tentativo = input("Inserire la chiave:")
+tentativo = input("Inserire la chiave: ")
 
-if (chiave == tentativo):
+if (tentativo == chiave):
     print("Contenuto sbloccato.\nChiave inerita GIUSTA!")
 
 else:
@@ -21,5 +21,8 @@ else:
         else:
             print("Nessuna chiave trovata.")
 
-    else:
+    elif (scelta == 2):
         print("Arrivederci.")
+
+    else:
+        print("Per favore digitare un numero corrispondente alle scelte.")
