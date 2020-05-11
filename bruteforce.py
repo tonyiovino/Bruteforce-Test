@@ -12,9 +12,7 @@ else:
     print("Contenuto bloccato.\nChiave inserita SBAGLIATA!")
     print("1: Avvia il bruteforce (Trova la chiave);\n2: Lascia perdere ed esci dal programma.")
     scelta = input()
-
-
-
+    
     if (scelta == 1):
         for tentativo in range(0, 999999):
             if tentativo == ijdg:
@@ -24,8 +22,6 @@ else:
 
         else:
             print("Nessuna chiave trovata.")
-
-    
 
     elif (scelta == 2):
         print("Arrivederci.")
