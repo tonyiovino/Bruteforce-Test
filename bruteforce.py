@@ -4,6 +4,7 @@ ijdg = int(string)
 
 print("Contenuto bloccato.")
 tentativo = input("Inserire la chiave: ")
+tentativo = int(tentativo)
 
 if tentativo == ijdg:
     print("Contenuto sbloccato.\nChiave inserita GIUSTA!")
@@ -12,9 +13,10 @@ else:
     print("Contenuto bloccato.\nChiave inserita SBAGLIATA!")
     print("1: Avvia il bruteforce (Trova la chiave);\n2: Lascia perdere ed esci dal programma.")
     scelta = input()
+    scelta = int(scelta)
     
     if scelta == 1:
-        for tentativo in range(0, 999999):
+        for tentativo in range(0, 9999999):
             if tentativo == ijdg:
                 break
         if tentativo == ijdg:
